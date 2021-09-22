@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/d3a3675810.js" crossorigin="anonymous"></script>
+
+    <style>
+
+  h1, h2, h3,p{
+  font-size: 12px;
+  font-family: "Poppins" , sans-serif;
+}   
+
+.masonry { /* Masonry container */
+    -webkit-column-count: 4;
+  -moz-column-count:4;
+  column-count: 4;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+   margin: 1.5em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow:  9px 10px 20px #bcbcbc,
+             -9px -9px 20px #ffffff;
+}
+.item img{max-width:100%;}
+
+.item:hover{
+  transition: transform .5s ease;
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 320px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="menu-4">
+          <li><a href="index.html" data-hover="Home">Home</a></li>
+          <li><a href="about.html" data-hover="About Me">About Me</a></li>
+          <li><a href="resume.html" data-hover="Resume">Resume</a></li>
+          <li  class="current"><a href="#" data-hover="Projects">Projects</a></li>
+        </ul>
+  </nav>
+
+  
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2 class="section-heading" data-outline="Projects">Projects</h2>
+      </div>
+       
+      <div class="masonry">
+        <div class="item">
+          <img src="images/2021-09-22 1.png">
+          <H4>Kanishka IT PVT LTD.</H4>
+          <P>Software Training and Internships Providing Website.</P>
+          <P>USing HTML5, CSS3 , JS, NODE, MYSQL</P>
+          <a href="https://kanishka-heroku.herokuapp.com/">View</a>
+        </div>
+        <div class="item">
+          <img src="images/Deepx.png">
+          <H4>Deepx</H4>
+          <P>Online Shopping Website</P>
+          <P>Platefrom using Wordpress</P>
+          <a href="http://deepx.epizy.com/">View</a>
+        </div>
+        <div class="item">
+          <img src="images/Drum kit.png">
+          <H4>Drum Kit</H4>
+          <P>Drum key press Game</P>
+          <P>Using HTML5, CSS3, JavaScript</P>
+          <a href="https://drum-kit-wheat.vercel.app/">View</a>
+        </div>
+        <div class="item">
+          <img src="images/blog Project.png">
+          <H4>Blog Project</H4>
+          <P>Write your Blog & Publish</P>
+          <P>Using HTML5, CSS3, JavaScript, Nodejs, MongoDB</P>
+          <a href="https://my--blogs.herokuapp.com/">View</a>
+        </div>
+        <div class="item">
+          <img src="images/Portfolio.png">
+          <H4>Portfolio</H4>
+          <P>Simple Portfolio</P>
+          <P>Using HTML5 & CSS3</P>
+          <a href="https://my-portfolio21.netlify.app/">View</a>
+        </div>
+        <div class="item">
+          <img src="images/music app.png">
+          <H4>Music App</H4>
+          <P>UI Design of Music App</P>
+          <P>Using Figma</P>
+          <a href="https://www.behance.net/gallery/126913627/Music-Player">View</a>
+        </div>
+        <div class="item">
+          <img src="images/Product Page.png">
+          <H4>Landing Page</H4>
+          <P>UI Design of Shopping Site</P>
+          <P>Using Figma</P>
+          <a href="https://www.behance.net/gallery/127302711/Product-Landing-Page">View</a>
+        </div>
+        <div class="item">
+          <img src="images/track now.png">
+          <H4>E-Vehicle Tracking App</H4>
+          <P>UI Design of E-Vehicle</P>
+          <P>Using Figma</P>
+          <a href="https://www.figma.com/file/8QrvZuLHKSq3lo6nTfj4Pc/Tummoc-internship?node-id=0%3A1">View</a>
+        </div>
+        <div class="item">
+          <img src="images/Product view.png">
+          <H4>Grocery & Food Delivery App</H4>
+          <P>UI Design of Food Delivery App</P>
+          <P>Using Figma</P>
+          <a href="https://www.behance.net/gallery/127251159/Food-Delivery-App">View</a>
+        </div>
+        <div class="item">
+          <img src="images/Transaction.png" style="width: 90%;">
+          <H4>Money Transfer App</H4>
+          <P>UI Design of Money Transfer App</P>
+          <P>Using Figma</P>
+          <a href="https://www.behance.net/gallery/126918809/Money-Transfer-App">View</a>
+        </div>
+        <div class="item">
+          <img src="images/Analytics.png">
+          <H4>Analytics</H4>
+          <P>UI Design of Walk Track App</P>
+          <P>Using Figma</P>
+          <a href="https://www.behance.net/gallery/126911677/Analytics">View</a>
+        </div>
+        
+      
+    </div>
+
+
+  </section><!-- End Portfolio Section -->
+
+   
+<!---------------------------------------- Footer------------------------------------- -->
+<section id="footer">
+  <div class="wrapper">
+    <div class="icon facebook">
+      <div class="tooltip">Facebook</div>
+       <span><a href="https://www.facebook.com/shubham.shakya.7758"><i class="fab fa-facebook-f"></i></a></span>
+    </div>
+    <div class="icon instagram">
+      <div class="tooltip">Instagram</div>
+      <span><a href="https://www.instagram.com/session_error404/"><i class="fab fa-instagram"></i></a></span>
+    </div>
+    <div class="icon github">
+      <div class="tooltip">Github</div>
+      <span><a href="https://github.com/shubhamshakya2101"><i class="fab fa-github"></i></a></span>
+    </div>
+    <div class="icon youtube">
+      <div class="tooltip">Linkedin</div>
+      <span><a href="https://www.linkedin.com/in/shubham-shakya-614ba71a0/"><i class="fab fa-linkedin-in"></i></a></span>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
