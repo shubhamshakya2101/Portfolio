@@ -20,6 +20,14 @@
 
     <style>
 
+      #portfolio{
+        width: 100%;
+        background-image: url("../images/6.png");
+        background-size: cover;
+        background-position: center;
+       }
+
+
   h1, h2, h3,p{
   font-size: 12px;
   font-family: "Poppins" , sans-serif;
@@ -93,6 +101,14 @@
 </head>
 
 <body>
+
+  <div class="header">
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar">              
+        </div>
+    </div>
+</div>
+
     <nav>
         <ul class="menu-4">
           <li><a href="index.html" data-hover="Home">Home</a></li>
@@ -189,6 +205,13 @@
           <P>Using Figma</P>
           <a href="https://www.behance.net/gallery/126911677/Analytics">View</a>
         </div>
+        <div class="item">
+          <img src="images/foodie.png">
+          <H4>Foodie Adda</H4>
+          <P>Resturant Website</P>
+          <P>Using HTMl, CSS, JS</P>
+          <a href="https://foodie-adda.netlify.app/">View</a>
+        </div>
         
       
     </div>
@@ -219,6 +242,16 @@
   </div>
 </section>
 
+<script>
+  window.onscroll = function(){showPosition()};
+
+  function showPosition(){
+      var windScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (windScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+  }
+</script>
 
 </body>
 </html>

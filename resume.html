@@ -20,6 +20,13 @@
 </head>
 <body>
 
+  <div class="header">
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar">              
+        </div>
+    </div>
+  </div>
+
     <nav>
         <ul class="menu-4">
           <li><a href="index.html" data-hover="Home">Home</a></li>
@@ -63,11 +70,11 @@
                 <h4><i class="fas fa-book-reader"></i> High School &amp; Higher Secondary School</h4>
                 <h5>2014 - 2015</h5>
                 <p><em> Completed high school with 81.84% from Navyug Children Higher Secondary School, Morar, Gwalior,474006</em></p>
-                <!-- <p>Completed high school with 81.84%.</p> -->
+              
 
                 <h5>2016 - 2017</h5>
                 <p><em>Completed high school with 86.78% from Navyug Children Higher Secondary School, Morar, Gwalior,474006</em></p>
-                <!-- <p>Completed high school with 86.78%.</p> -->
+             
               </div>
               <div class="resume-item">
                 <h4><i class="fas fa-graduation-cap"></i> Bachelor  Degree</h4>
@@ -77,19 +84,12 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <!-- <h3 class="resume-title">Professional Experience</h3> -->
+             
               <div class="resume-item">
                 <h4><i class="fas fa-user-md"></i> Web Development Internship</h4>
                 <h5>15 Feb 2021- 15 june 2021</h5>
                 <p><em>Web Developer Internship from KanishkaIT PVT LTD.</em></p>
-                <!-- <p>
-                <ul>
-                  <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                  <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                  <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                  <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-                </ul>
-                </p> -->
+              
               </div>
               <div class="resume-item">
                 <h4><i class="fas fa-project-diagram"></i> Projects</h4>
@@ -141,7 +141,16 @@
   </div>
 </section>
 
+<script>
+  window.onscroll = function(){showPosition()};
 
+  function showPosition(){
+      var windScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (windScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+  }
+</script>
 
 </body>
 </html>

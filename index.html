@@ -20,12 +20,16 @@
     
     <script src="https://kit.fontawesome.com/d3a3675810.js" crossorigin="anonymous"></script>
 
-   
-
-    <title>My Portfolio</title>
-</head>
+    <title>WebDev-Shubh</title>
 
 <body>
+
+<div class="header">
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar">              
+        </div>
+    </div>
+</div>
    
 <div class="hero-image">
   <nav>
@@ -43,7 +47,6 @@
 
       <h1> Hey, I am <span style="color: #FB3640;">Shubham</span></h1>
       <p >Web Developer And An UI/UX Designer from India. I create custom websites to help business do better</p>
-      <!-- <button><span> Explore</span></button> -->
       <a href="mailto:shubhamshakya2761@gmail.com" class="button" style="text-decoration: none;"> <span>Contact</span></a>
  
 
@@ -149,7 +152,17 @@
   </div>
 </section>
 
+<script>
 
- 
+  window.onscroll = function(){showPosition()};
+
+  function showPosition(){
+      var windScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (windScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+  }
+
+</script>
 </body>
 </html>
